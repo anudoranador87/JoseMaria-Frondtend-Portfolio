@@ -20,6 +20,7 @@ The aim of this project is to document my progress and " bridge" my life experie
    *Added Education section featurin my Bed and current certifications
    *Structured professional skills using nested HTML lists i learned from FreeCodeCamp.
    *Cleaned up HTML Semantics for better accesibility
+   * Trying to aplly and understand why styles on other sections are not currentlyw working.
 
 ## Contact
 ** Location:** Malaga, Spain
