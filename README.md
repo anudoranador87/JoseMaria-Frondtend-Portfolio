@@ -17,6 +17,9 @@ The aim of this project is to document my progress and " bridge" my life experie
    *Implemented semantic headers and sections.
    *Created lists to showcase profesional skills from my CV.
    *Established the narrative of my career transitions.
+   *Added Education section featurin my Bed and current certifications
+   *Structured professional skills using nested HTML lists i learned from FreeCodeCamp.
+   *Cleaned up HTML Semantics for better accesibility
 
 ## Contact
 ** Location:** Malaga, Spain
