@@ -19,9 +19,10 @@ The aim of this project is to document my progress and " bridge" my life experie
    *Established the narrative of my career transitions.
    *Added Education section featurin my Bed and current certifications
    *Structured professional skills using nested HTML lists i learned from FreeCodeCamp.
-   *Cleaned up HTML Semantics for better accesibility
+   *Cleaned up HTML Semantics for better accessibility
    * Trying to aplly and understand why styles on other sections are not currentlyw working.
-   * 25/01/2026*Just refactored index.html: tidier markup, corrected typos, better image alt text, and fixed links. Next up: styling 
+   * 25/01/2026*Just refactored index.html: tidier markup, corrected typos, better image alt text, and fixed links. Next up: styling
+   * 26/01/2026* Refactored CSS to improve text alignment and padding, and adjusted header contrast for enhanced readability.
 
 ## Contact
 ** Location:** Malaga, Spain
