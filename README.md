@@ -23,6 +23,7 @@ The aim of this project is to document my progress and " bridge" my life experie
    * Trying to aplly and understand why styles on other sections are not currentlyw working.
    * 25/01/2026 - Refactorización de index.html: marcado más limpio, corrección de errores tipográficos, mejora de los textos alternativos (alt) en imágenes y reparación de enlaces. Siguiente paso: estilos.
    * 26/01/2026 - Refactorización de CSS para mejorar la alineación del texto y el espaciado (padding); ajuste del contraste del encabezado para una mejor legibilidad.
+   * 12/02/2026 - Implementacion de una seccion de proyectos personales de Meta certification y proximos proyectos. arreglé la estructura y estilo de esta seccion.
  
 
 ## Contact
