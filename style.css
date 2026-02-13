@@ -1,48 +1,96 @@
-header {
-  /* i apply the changes to make it more visually appealing */
-  color: white;
-  padding: 20px 20px 20px 20px;
-  text-align: center;
-  background-color: #2c3e50;
-  font-family: 'roboto', sans-serif;
-  margin:auto;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: xx-large;
-  border: 2px solid #2c3e50;
-  border-radius: 10px 10px 0 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Fira+Code:wght@400;500&display=swap');
 
+/* I change the header color, and structure for clean visibility */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  /* i updated to a more modern and clean background */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: none; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
 }
-.btn:hover {
-  background-color:#34495e;
-  transform: scale(1.05); 
+
+.header-text h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #1a1a1a; /* i updated to a darker color for better contrast*/
+  letter-spacing: -1px;
+  margin: 0;
 }
-.btn i {
-  margin-right: 8px;
+.header-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left; 
 }
+
 
 .profile-pic {
-  display: block;
-  scale: cover; 
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
-  border: 3px solid #2980b9;
-  margin-bottom: 10px;
-  }
-.contact-info {
-  color: white;
-  padding: 10px 10px 10px 10px;
-  text-align: center;
-  margin: auto;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  
+  width: 90px;
+  height: 90px;
+  border-radius: 15px; 
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
 }
+.header-text h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+/* Iconos y Botón en el nuevo esquema de color */
+.header-icon {
+  color: #2f3542;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.header-icon:hover {
+  color: #3742fa; 
+}
+
+.subtitle {
+  font-family: 'Fira Code', monospace;
+  background: transparent;
+  border: none;
+  color: #57606f;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.header-contact-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.btn-talk-header {
+  font-family: 'Inter', sans-serif;
+  background-color: #3742fa;
+  color: white !important;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-talk-header:hover {
+  background-color: #2f3542;
+  transform: scale(1.05);
+}
+
+
 .btn {
   background-color: #2980b9;
   color: white;
@@ -66,7 +114,7 @@ h2  {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  font-size: x-large;
+  font-size: 1.1rem;
   border: 2px solid #2c3e50;
   border-radius: 10px;
 }
@@ -89,7 +137,7 @@ body  {
       max-width: 1200px;
       margin: 20px auto;
       font-family: 'roboto', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #333;
 
     }
@@ -100,7 +148,7 @@ body  {
       margin: 20px 0;
       margin: 20px auto;
       font-family: 'roboto', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #333;
     }
     #skills-tech {
@@ -110,7 +158,7 @@ body  {
       margin: 20px 0;
       margin: 20px auto;
       font-family: 'roboto', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #333;
     }
     #education {
@@ -120,7 +168,7 @@ body  {
       margin: 20px 0;
       margin: 20px auto;
       font-family: 'roboto', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #333;
     }
     #personal-experience {
@@ -130,7 +178,7 @@ body  {
       margin: 20px 0;
       margin: 20px auto;
       font-family: 'roboto', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #333;
     }
     a {
@@ -142,7 +190,7 @@ body  {
       color: #0c0d0d;
     }
     .lead-text {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 500;
     }
 ul {
@@ -181,7 +229,7 @@ footer {
   transform: scale(1.1); 
   transition: transform 0.6s ease;
 }
-/* Rejilla de proyectos */
+
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -209,6 +257,7 @@ color: #333; }
   background: #ffffff;
   border: 1px solid #bdc3c7;
   border-radius: 10px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -276,3 +325,23 @@ color: #333; }
 
 .btn-code:hover { background-color: #34495e; }
 .btn-live:hover { background-color: #bdc3c7; }
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .header-main {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.btn:hover {
+  background-color:#34495e;
+  transform: scale(1.05); 
+}
+.btn i {
+  margin-right: 8px;
+}
