@@ -12,19 +12,40 @@ The aim of this project is to document my progress and " bridge" my life experie
 **HTML5:**Focusin on semantic structure and clean document structure.
 **CSS3:** (Coming Soon) My next step is to add styling and layout, currently learning on freecodecamp. 
 
-## Evolution Log (changelog)
-** v.1.0 Initial structure using HTML only(current)
-   *Implemented semantic headers and sections.
-   *Created lists to showcase profesional skills from my CV.
-   *Established the narrative of my career transitions.
-   *Added Education section featurin my Bed and current certifications
-   *Structured professional skills using nested HTML lists i learned from FreeCodeCamp.
-   *Cleaned up HTML Semantics for better accessibility
-   * Trying to aplly and understand why styles on other sections are not currentlyw working.
-   * 25/01/2026 - Refactorización de index.html: marcado más limpio, corrección de errores tipográficos, mejora de los textos alternativos (alt) en imágenes y reparación de enlaces. Siguiente paso: estilos.
-   * 26/01/2026 - Refactorización de CSS para mejorar la alineación del texto y el espaciado (padding); ajuste del contraste del encabezado para una mejor legibilidad.
-   * 12/02/2026 - Implementacion de una seccion de proyectos personales de Meta certification y proximos proyectos. arreglé la estructura y estilo de esta seccion.
- 
+#📈 Progress Log
+v.1.0 - Initial Structure & Semantics
+
+Implemented semantic headers and sections for better accessibility.
+
+Created nested HTML lists to showcase professional skills from my CV, applying concepts learned from FreeCodeCamp.
+
+Established the narrative of my career transitions and added an Education section featuring my B.Ed. and current certifications.
+
+Cleaned up HTML code and improved image alt texts for better SEO and screen reader support.
+
+v.1.1 - Styling & Visual Refactoring (Jan 2026)
+
+2026-01-25: Refactored index.html: cleaner markup, fixed typos, and repaired broken links.
+
+2026-01-26: Refactored CSS to improve text alignment and spacing (padding); adjusted header contrast for better readability.
+
+v.1.2 - Projects & Portfolio Integration (Feb 2026)
+
+2026-02-12: Implemented a "Personal Projects" section featuring Meta Certification labs and upcoming projects. Fixed layout and styling for this specific section.
+
+v.1.3 - Advanced Interactivity: Playing Cards Project (Current)
+
+2026-02-16: Completed the FreeCodeCamp Playing Cards certification project.
+
+Implemented Advanced Flexbox for card layouts and alignment.
+
+Added 3D Hover Effects using transform (translateY and rotateX) with custom cubic-bezier timing.
+
+Refactored background logic using CSS Pseudo-elements (::before) to apply filters independently.
+
+Created a dynamic Grayscale-to-Color transition on hover using CSS filter.
+
+Optimized visual hierarchy with drop-shadow on icons and cards for a "board game" feel.
 
 ## Contact
 ** Location:** Malaga, Spain
