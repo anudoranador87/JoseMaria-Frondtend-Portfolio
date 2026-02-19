@@ -47,6 +47,10 @@ Created a dynamic Grayscale-to-Color transition on hover using CSS filter.
 
 Optimized visual hierarchy with drop-shadow on icons and cards for a "board game" feel.
 
+
+## Implemented a button for Dark mode(Progress) 19/02/2026
+
+Currently implemented a button on top rigth on a fixed position,  and studying Javascript to make it work
 ## Contact
 ** Location:** Malaga, Spain
 
