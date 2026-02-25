@@ -372,7 +372,54 @@ color: #333; }
   transform: scale(1.1) rotate(15deg); 
 }
 
+.journey-section {
+    background-color: #f8f9fa; /* Un gris muy clarito para diferenciar */
+    border-left: 5px solid #3742fa; /* El color azul que ya usas */
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
 
+.journey-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.journey-header i {
+    font-size: 1.5rem;
+    color: #3742fa;
+}
+
+.journey-header h2 {
+    margin: 0; /* Para que no se descuadre con el icono */
+    background: none;
+    color: #1a1a1a;
+    border: none;
+    padding: 0;
+}
+
+.btn-journey {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2c3e50;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn-journey:hover {
+    background-color: #3742fa;
+    transform: translateY(-2px);
+}
 @media (max-width: 768px) {
   header {
     flex-direction: column;

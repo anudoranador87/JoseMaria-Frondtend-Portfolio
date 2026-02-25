@@ -45,7 +45,7 @@ Refactored background logic using CSS Pseudo-elements (::before) to apply filter
 
 Created a dynamic Grayscale-to-Color transition on hover using CSS filter.
 
-Optimized visual hierarchy with drop-shadow on icons and cards for a "board game" feel.
+Optimized visual hierarchy with drop-shadow on icons and cards for a "board game" feel.giu
 
 
 ## Implemented a button for Dark mode(Progress) 19/02/2026
