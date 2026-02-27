@@ -14,13 +14,9 @@ The aim of this project is to document my progress and " bridge" my life experie
 
 #📈 Progress Log
 v.1.0 - Initial Structure & Semantics
-
 Implemented semantic headers and sections for better accessibility.
-
 Created nested HTML lists to showcase professional skills from my CV, applying concepts learned from FreeCodeCamp.
-
 Established the narrative of my career transitions and added an Education section featuring my B.Ed. and current certifications.
-
 Cleaned up HTML code and improved image alt texts for better SEO and screen reader support.
 
 v.1.1 - Styling & Visual Refactoring (Jan 2026)
@@ -51,6 +47,20 @@ Optimized visual hierarchy with drop-shadow on icons and cards for a "board game
 ## Implemented a button for Dark mode(Progress) 19/02/2026
 
 Currently implemented a button on top rigth on a fixed position,  and studying Javascript to make it work
+
+
+### 🌓 27/02/2026 The Achievement: Native Dark Mode
+Today I finalized the implementation of a functional **Dark Mode** for my web portfolio. After several working sessions, I’ve successfully made the interface adapt to user preferences, improving accessibility and eye comfort.
+
+#### 🛠️ How I did it
+1. **JavaScript Logic**: I used DOM manipulation to create an *Event Listener* that detects clicks on the theme toggle button, triggering a `classList.toggle('dark-mode')` on the document body.
+2. **CSS Architecture (Design Tokens)**: Instead of changing colors individually, I designed a system using **CSS Variables (`Custom Properties`)**. This makes the theme switch centralized, scalable, and extremely fast.
+
+#### ⚔️ Challenges & Learning
+* **Order vs. Chaos**: I faced a "jungle" of duplicated styles and hardcoded colors that were blocking inheritance. Refactoring the code was essential for the variables to work properly.
+* **Strict Syntax**: I discovered that CSS is unforgiving; a single misplaced closing brace `}` could invalidate entire sections of my code. I learned that **hierarchy and order** are not optional, but the foundation of professional development.
+
+* **This is the result** ![Dark Mode](dark-button.gif)
 ## Contact
-** Location:** Malaga, Spain
+** Location:** Malaga, Spain 
 
