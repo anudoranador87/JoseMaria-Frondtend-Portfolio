@@ -1,66 +1,125 @@
-# Web-dev-journey
-Refactoring my profesional background into front-end development. Work in progress!!
+# 🌐 Jose Aparicio – Web Developer | Interactive Web CV
 
-#  Hi! I am Jose Maria!
-a professional transitioning from hospitality management into Full-Stack Development.
-This repository will contain my first personal website, built as a I learn the foundations of the web
+![Banner](assets/banner-cv.png)
 
-## Project Goal
-The aim of this project is to document my progress and " bridge" my life experience working in hospitality and hard work, into this new role of web developtment, something i really liked, but never decided to make the step to learn it, until now.
+> "From check-in to code-in: applying years of high-pressure problem-solving to the art of web development."
 
-## Current tech Stack
-**HTML5:**Focusin on semantic structure and clean document structure.
-**CSS3:** (Coming Soon) My next step is to add styling and layout, currently learning on freecodecamp. 
+---
 
-#📈 Progress Log
-v.1.0 - Initial Structure & Semantics
-Implemented semantic headers and sections for better accessibility.
-Created nested HTML lists to showcase professional skills from my CV, applying concepts learned from FreeCodeCamp.
-Established the narrative of my career transitions and added an Education section featuring my B.Ed. and current certifications.
-Cleaned up HTML code and improved image alt texts for better SEO and screen reader support.
+## 👋 About Me
+Hi! I’m **Jose Aparicio**, a professional bridging hospitality management and **Full-Stack Development**.  
+This is my **living Web CV**, combining **portfolio projects**, **skills**, and **career evolution** in one interactive showcase.
 
-v.1.1 - Styling & Visual Refactoring (Jan 2026)
+- 📍 Location: Malaga, Spain  
+- 🌱 Learning: React, Advanced JS, Accessibility  
+- 🎯 Goal: Junior Front-End Developer  
 
-2026-01-25: Refactored index.html: cleaner markup, fixed typos, and repaired broken links.
+---
 
-2026-01-26: Refactored CSS to improve text alignment and spacing (padding); adjusted header contrast for better readability.
+## 🏗️ Project Purpose
+This Web CV is designed to:  
 
-v.1.2 - Projects & Portfolio Integration (Feb 2026)
+- Showcase **personal projects** and **technical growth**  
+- Highlight **career transition** & transferable soft skills  
+- Serve as a **portfolio + playground** for HTML, CSS, JS experiments  
 
-2026-02-12: Implemented a "Personal Projects" section featuring Meta Certification labs and upcoming projects. Fixed layout and styling for this specific section.
+---
 
-v.1.3 - Advanced Interactivity: Playing Cards Project (Current)
+## 🎨 Key Features
+| Feature | Description |
+|---------|-------------|
+| 🌙 **Dark Mode Toggle** | Theme switch via CSS variables + JS |
+| 📱 **Responsive Design** | Desktop, Tablet & Mobile optimized |
+| 🎨 **Interactive Portfolio** | Project cards with hover effects & links |
+| 📌 **Sticky Navigation** | Always-visible header for seamless browsing |
+| ✍️ **Professional Narrative** | Career story & progression clearly documented |
 
-2026-02-16: Completed the FreeCodeCamp Playing Cards certification project.
+---
 
-Implemented Advanced Flexbox for card layouts and alignment.
+## 🛠️ Tech Stack
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Font Awesome](https://img.shields.io/badge/FontAwesome-528DD0?style=for-the-badge&logo=fontawesome&logoColor=white)
 
-Added 3D Hover Effects using transform (translateY and rotateX) with custom cubic-bezier timing.
+---
 
-Refactored background logic using CSS Pseudo-elements (::before) to apply filters independently.
+## 💼 Professional Skills
+### Core Strengths
+- 👥 Team Collaboration – Leading multidisciplinary teams  
+- 🔧 Problem Solving – Resolving complex issues under pressure  
+- 🌍 International Experience – Spain & UK  
+- ⏱ Work Under Pressure – Airports & high-volume hotels  
 
-Created a dynamic Grayscale-to-Color transition on hover using CSS filter.
+### Technical & Language Stack
+- 💻 HTML5 & CSS3 – Semantic markup, Flexbox/Grid, responsive design  
+- ⚡ JavaScript – DOM manipulation, interactive UI components  
+- 🗣 Languages – English B2 certified, Spanish native  
 
-Optimized visual hierarchy with drop-shadow on icons and cards for a "board game" feel.giu
+---
 
+## 🎓 Education & Certifications
+| Degree / Certification | Institution | Notes |
+|-----------------------|------------|------|
+| BEd in Physical Education | University of Málaga | Pedagogy, planning, communication, teamwork |
+| Meta Front-End Developer | Coursera (in progress) | React, JS, HTML, CSS |
+| FreeCodeCamp | Responsive Web Design & JS (in progress) | Hands-on front-end projects |
+| English B2 | EOI Certified | Multicultural communication |
+| Digital Marketing | Google Activate | Basic digital strategies |
 
-## Implemented a button for Dark mode(Progress) 19/02/2026
+---
 
-Currently implemented a button on top rigth on a fixed position,  and studying Javascript to make it work
+## 🏆 Featured Projects
 
+### Meta Front-End Specialization
+<div style="display:flex;flex-wrap:wrap;gap:1rem;">
+<div style="border:1px solid #eee;padding:1rem;border-radius:12px;flex:1;min-width:250px;">
+**Mangata Gallo Landing Page**  
+Semantic HTML & CSS for Meta course project.  
+**[Code](https://github.com/anudoranador87/mangata-gallo-jewelry)** | **[Live](mangatagallo.png)**
+</div>
 
-### 🌓 27/02/2026 The Achievement: Native Dark Mode
-Today I finalized the implementation of a functional **Dark Mode** for my web portfolio. After several working sessions, I’ve successfully made the interface adapt to user preferences, improving accessibility and eye comfort.
+<div style="border:1px solid #eee;padding:1rem;border-radius:12px;flex:1;min-width:250px;">
+**Playing Cards Game**  
+Flexbox, 3D transforms, grayscale-to-color hover.  
+**[Code](https://github.com/anudoranador87/we-playing-cards)** | **[Live](previewcards.png)**
+</div>
+</div>
 
-#### 🛠️ How I did it
-1. **JavaScript Logic**: I used DOM manipulation to create an *Event Listener* that detects clicks on the theme toggle button, triggering a `classList.toggle('dark-mode')` on the document body.
-2. **CSS Architecture (Design Tokens)**: Instead of changing colors individually, I designed a system using **CSS Variables (`Custom Properties`)**. This makes the theme switch centralized, scalable, and extremely fast.
+### FreeCodeCamp Projects
+<div style="display:flex;flex-wrap:wrap;gap:1rem;">
+<div style="border:1px solid #eee;padding:1rem;border-radius:12px;flex:1;min-width:250px;">
+**Hospitality Survey Form**  
+HTML5 form with validation, radio buttons, professional inputs.  
+**[Code](https://github.com/anudoranador87/fcc-hotel-survey-form)** | Coming Soon
+</div>
 
-#### ⚔️ Challenges & Learning
-* **Order vs. Chaos**: I faced a "jungle" of duplicated styles and hardcoded colors that were blocking inheritance. Refactoring the code was essential for the variables to work properly.
-* **Strict Syntax**: I discovered that CSS is unforgiving; a single misplaced closing brace `}` could invalidate entire sections of my code. I learned that **hierarchy and order** are not optional, but the foundation of professional development.
+<div style="border:1px solid #eee;padding:1rem;border-radius:12px;flex:1;min-width:250px;">
+**Book Inventory App**  
+Personal project using HTML & CSS.  
+Coming Soon
+</div>
 
-* **This is the result** ![Dark Mode](dark-button.gif)
-## Contact
-** Location:** Malaga, Spain 
+<div style="border:1px solid #eee;padding:1rem;border-radius:12px;flex:1;min-width:250px;">
+**Product Landing Page**  
+Flexbox & sticky nav for modern UX.  
+Coming Soon
+</div>
+</div>
 
+---
+
+## 📈 Progress Timeline
+```mermaid
+gantt
+    title Web CV Development Timeline
+    dateFormat  YYYY-MM-DD
+    section Initial Setup
+    Semantic HTML Structure     :done, 2026-01-15, 2026-01-20
+    CSS Styling Basics          :done, 2026-01-21, 2026-01-26
+    Portfolio Section Added     :done, 2026-02-01, 2026-02-12
+    Playing Cards Project       :done, 2026-02-13, 2026-02-16
+    Dark Mode Implementation    :done, 2026-02-17, 2026-02-27
+    Upcoming Features           :active, 2026-03-01, 2026-03-31
