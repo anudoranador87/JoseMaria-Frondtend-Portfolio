@@ -4,7 +4,7 @@
 
 ---
 
-<a name="english"></a>
+<a id="english"></a>
 
 # 🌐 Jose Aparicio – Web Developer | Interactive Web CV
 
@@ -127,7 +127,7 @@ Apr 2026+ → React integration & EquiShift dashboard
 ---
 ---
 
-<a name="espanol"></a>
+<a id="espanol"></a>
 
 # 🌐 Jose Aparicio – Desarrollador Web | Web CV Interactivo
 
