@@ -278,17 +278,32 @@ main {
 }
 /* ══ CV BANNER ══ */
 .cv-banner {
-  width: 100%;
+  max-width: var(--max);
+  margin: -24px auto 0;
   overflow: hidden;
-  max-height: 180px;
+  max-height: 160px;
 }
 
 .cv-banner-img {
   width: 100%;
-  height: 100%;
+  height: 160px;
   object-fit: cover;
-  object-position: center;
+  object-position: center 30%;
   display: block;
+}
+
+/* Foto — altura explícita en desktop */
+.masthead-photo-wrap {
+  height: 220px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(10%);
 }
 /* ── SECTION: CHECK-IN TO CODE-IN ───────────────────────── */
 .section-checkin { margin-bottom: 12px; }
