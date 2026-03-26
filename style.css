@@ -282,12 +282,29 @@ main {
   max-width: var(--max);
   margin: -24px auto 0;
   overflow: hidden;
+  max-height: 160px;
 }
 
 .cv-banner-img {
   width: 100%;
-  height: auto;
+  height: 160px;
+  object-fit: cover;
+  object-position: center 30%;
   display: block;
+}
+
+/* Foto — altura explícita en desktop */
+.masthead-photo-wrap {
+  height: 220px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(10%);
 }
 /* ── SECTION: CHECK-IN TO CODE-IN ───────────────────────── */
 .section-checkin { margin-bottom: 12px; }
@@ -732,6 +749,122 @@ main {
 .btn-live { background: var(--bg-section); color: var(--dark) !important; border: 1px solid var(--border); }
 .btn-live:hover { background: var(--border); }
 
+/* ── TERMINAL ──────────────────────────────────────────────── */
+/* ===== RESET BÁSICO ===== */
+#terminal365 * {
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
+}
+
+/* ===== CONTENEDOR ===== */
+#terminal365 {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ===== VENTANA TERMINAL ===== */
+.terminal-window {
+  width: 100%;
+  max-width: 700px;
+  background: #0d0d0d;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+.term-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1a1a1a;
+  padding: 10px;
+  border-bottom: 1px solid #222;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.title {
+  margin-left: 10px;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* ===== IDIOMA ===== */
+.term-lang {
+  padding: 8px 10px;
+  border-bottom: 1px solid #222;
+}
+
+.term-lang button {
+  background: transparent;
+  border: 1px solid #333;
+  color: #aaa;
+  padding: 4px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.term-lang button:hover {
+  border-color: #666;
+  color: #fff;
+}
+
+/* ===== OUTPUT ===== */
+.console-output {
+  padding: 15px;
+  height: 300px;
+  overflow-y: auto;
+  color: #00ff9c;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Scroll fino */
+.console-output::-webkit-scrollbar {
+  width: 6px;
+}
+
+.console-output::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* ===== INPUT ===== */
+.input-line {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 1px solid #222;
+}
+
+.prompt {
+  color: #00ff9c;
+  margin-right: 8px;
+}
+
+#console-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00ff9c;
+  font-size: 0.9rem;
+}
+
+/* ===== EFECTO CURSOR ===== */
+#console-input::placeholder {
+  color: #555;
+}
 /* ── FOOTER ──────────────────────────────────────────────── */
 footer {
   background: var(--dark);
