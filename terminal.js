@@ -15,7 +15,7 @@
   const history = [];
   let historyIndex = -1;
 
-  const start = new Date('2026-02-24');
+  const start = new Date('2026-01-18'); // Fecha real de inicio del reto
   const now   = new Date();
   const DAY   = Math.min(365, Math.floor((now - start) / 86400000) + 1);
   const PCT   = Math.round((DAY / 365) * 100);
@@ -72,13 +72,13 @@
     ],
 
     whoami: () => [
-      { t: 'accent', v: 'Jose Aparicio — Front-End Developer in Training' },
+      { t: 'accent', v: 'Jose Aparicio — Front-End Developer' },
       { t: 'dim',    v: '────────────────────────────────────────────────' },
       { t: 'main',   v: '  Location   : Málaga, España' },
       { t: 'main',   v: '  Background : 8 years in hospitality management' },
       { t: 'main',   v: '  Stack      : HTML · CSS · JavaScript' },
       { t: 'main',   v: '  Building   : EquiShift — fair shift algorithm' },
-      { t: 'main',   v: `  Mission    : Day ${DAY} of 365. Still coding.` },
+      { t: 'main',   v: `  Day        : ${DAY} of 365. Still coding.` },
       { t: 'green',  v: '  Status     : Available for junior roles' },
       { t: 'dim',    v: '' },
       { t: 'dim',    v: 'Not a career change. A system upgrade.' },
@@ -289,11 +289,18 @@
     }
   });
 
+  // El foco solo se activa cuando el usuario hace clic en la terminal
+  // — no al cargar la página, para evitar el scroll automático al fondo
+  const terminalWrapper = output.closest('.terminal') || output.parentElement;
+  if (terminalWrapper) {
+    terminalWrapper.addEventListener('click', () => input.focus());
+  }
+
   if (cursor) {
     input.addEventListener('focus', () => cursor.style.display = 'inline-block');
     input.addEventListener('blur',  () => cursor.style.display = 'none');
   }
 
   boot();
-  input.focus();
+  // input.focus() eliminado — era el causante del scroll automático al cargar
 })();
