@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CV web de Jose Aparicio, Front-End Developer en formación. Proyectos reales con HTML, CSS y JavaScript, enfoque en resolución de problemas y mejora continua.">
   <title>Jose Aparicio | Web Developer</title>
   <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="terminal.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+<a href="#main-content" class="skip-link" data-i18n="a11y.skip">Skip to main content</a>
 
 <!-- FLOATING CONTROLS -->
 <div class="float-controls">
@@ -31,7 +34,7 @@
     <span class="meta-right">
       <span class="meta-item">anudoranador87</span>
       <span class="meta-sep">·</span>
-      <span class="meta-item">DISPONIBLE</span>
+      <span class="meta-item">CAREER SHIFT</span>
     </span>
   </div>
 
@@ -41,10 +44,11 @@
       <div class="masthead-kicker" data-i18n="mast.role">Front-End Developer in Training</div>
       <h1 class="masthead-name">Jose<br><em>Aparicio</em></h1>
       <p class="masthead-tagline" data-i18n="mast.tagline">Bridging Hospitality Excellence &amp; Front-End Development</p>
+      <p class="masthead-kicker" data-i18n="mast.open">Open to Junior Front-End roles · Malaga / Remote · Immediate availability</p>
     </div>
     <div class="masthead-photo-block">
       <div class="masthead-photo-wrap">
-        <img src="fotoJose.png" alt="Jose Aparicio" class="profile-pic">
+        <img src="fotoJose.png" alt="Jose Aparicio" class="profile-pic" width="400" height="440" fetchpriority="high">
         <div class="masthead-photo-caption">Jose Aparicio · Front-End Dev</div>
       </div>
     </div>
@@ -53,28 +57,31 @@
   <!-- Barra de contacto inferior -->
   <div class="header-contact-bar">
     <div class="contact-bar-links">
-      <a href="https://wa.me/34613019444" class="header-icon" title="Email">
+      <a href="mailto:josemaparicio87@gmail.com" class="header-icon" title="Email" data-track="email">
         <i class="fas fa-envelope"></i> josemaparicio87&#64;gmail&#46;com
       </a>
-      <a href="https://github.com/anudoranador87" target="_blank" rel="noopener noreferrer" class="header-icon" title="GitHub">
+      <a href="https://github.com/anudoranador87" target="_blank" rel="noopener noreferrer" class="header-icon" title="GitHub" data-track="github">
         <i class="fab fa-github"></i> anudoranador87
       </a>
-      <a href="https://www.linkedin.com/in/joseaparicio87/" target="_blank" rel="noopener noreferrer" class="header-icon" title="LinkedIn">
+      <a href="https://www.linkedin.com/in/joseaparicio87/" target="_blank" rel="noopener noreferrer" class="header-icon" title="LinkedIn" data-track="linkedin">
         <i class="fab fa-linkedin"></i> joseaparicio87
       </a>
     </div>
-    <a href="https://wa.link/gp0oxb" class="btn-talk-header">Get in Touch</a>
+    <div class="header-cta-group">
+      <a href="Jose-Aparicio-CV.pdf" class="btn-talk-header btn-pdf-header" data-i18n="cta.pdf" data-track="cv-pdf">Download CV PDF</a>
+      <a href="mailto:josemaparicio87@gmail.com?subject=Junior%20Front-End%20Opportunity" class="btn-talk-header" data-i18n="cta.hire" data-track="hire-me">Hire Me</a>
+    </div>
   </div>
 
 </header>
 
 <!-- ══ BANNER ══════════════════════════════════════════ -->
 <div class="cv-banner">
-  <img src="banner-linkedin-diary.png" alt="365 days of coding — No filters · Real errors" class="cv-banner-img">
+  <img src="banner-linkedin-diary.png" alt="365 days of coding — No filters · Real errors" class="cv-banner-img" width="1600" height="160" loading="lazy" decoding="async">
 </div>
 
 <!-- ══ MAIN ══════════════════════════════════════════════ -->
-<main>
+<main id="main-content">
 
   <!-- FROM CHECK-IN TO CODE-IN -->
   <section id="checkin" class="section-checkin">
@@ -95,9 +102,7 @@
         </blockquote>
         <div class="checkin-cta">
           <a href="https://anudoranador87.github.io/Mi-Camino-Web-365/" target="_blank" rel="noopener noreferrer" class="btn-journey">
-            <i class="fab fa-github"></i> Ver Progreso Diario
-          </a>
-         
+            <i class="fab fa-github"></i> <span data-i18n="checkin.cta.daily">View Daily Progress</span>
           </a>
         </div>
       </div>
@@ -272,11 +277,16 @@
         </div>
         <div class="project-content">
           <h3>EquiShift Málaga</h3>
+          <ul class="project-kpis">
+            <li data-i18n="eq.kpi1">104 weekends validated</li>
+            <li data-i18n="eq.kpi2">14 Malaga holidays configured</li>
+            <li data-i18n="eq.kpi3">Fairness rules tested across mixed contracts</li>
+          </ul>
           <p>Intelligent shift rotation algorithm for multi-contract hospitality teams. Guarantees mathematical fairness across weekends, nights and holidays. 104 weekends validated. <strong>Not a tutorial — built from 8 years of direct operational experience.</strong></p>
           <div class="project-tags"><span class="ptag">JavaScript</span><span class="ptag">Algorithms</span><span class="ptag">OOP</span><span class="ptag">Real data</span></div>
           <div class="project-actions">
-            <a href="https://github.com/anudoranador87/EquiShift-M-laga-2026-Algoritmo-de-cuadrantes-equitativos-con-JS" class="btn-code" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Repo</a>
-            <a href="https://anudoranador87.github.io/Mi-Camino-Web-365/" class="btn-live" target="_blank" rel="noopener noreferrer"><i class="fa fa-book-open"></i> Dev Log</a>
+            <a href="https://github.com/anudoranador87/EquiShift-M-laga-2026-Algoritmo-de-cuadrantes-equitativos-con-JS" class="btn-code" target="_blank" rel="noopener noreferrer" data-track="equishift-repo"><i class="fa-brands fa-github"></i> Repo</a>
+            <a href="https://anudoranador87.github.io/Mi-Camino-Web-365/" class="btn-live" target="_blank" rel="noopener noreferrer" data-track="dev-log"><i class="fa fa-book-open"></i> Dev Log</a>
           </div>
         </div>
       </div>
@@ -388,22 +398,43 @@
           <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">Accessibility</span></div>
           <div class="project-actions">
             <a href="https://github.com/anudoranador87/fcc-hotel-survey-form" class="btn-code" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
-            <a href="#" class="btn-live"><i class="fa fa-eye"></i> Soon</a>
+            <a href="https://github.com/anudoranador87/fcc-hotel-survey-form" class="btn-live" target="_blank" rel="noopener noreferrer"><i class="fa fa-eye"></i> Code only</a>
           </div>
         </div>
       </div>
  
     </div>
   </section>
+  <section id="impact-30">
+    <div class="section-rule-editorial">
+      <span class="rule-line"></span>
+      <span class="rule-label" data-i18n="impact.section">What I can deliver in 30 days</span>
+      <span class="rule-line"></span>
+    </div>
+    <div class="impact-grid">
+      <article class="impact-card">
+        <h3 data-i18n="impact.ui.title">Responsive UI delivery</h3>
+        <p data-i18n="impact.ui.desc">Build accessible and responsive pages from Figma or references using semantic HTML and scalable CSS architecture.</p>
+      </article>
+      <article class="impact-card">
+        <h3 data-i18n="impact.api.title">API integration basics</h3>
+        <p data-i18n="impact.api.desc">Connect front-end views to REST APIs, handle loading and errors, and keep components understandable and maintainable.</p>
+      </article>
+      <article class="impact-card">
+        <h3 data-i18n="impact.refactor.title">Legacy refactor support</h3>
+        <p data-i18n="impact.refactor.desc">Improve existing CSS/JS modules, reduce repetition, and document decisions so the team can keep shipping safely.</p>
+      </article>
+      <article class="impact-card">
+        <h3 data-i18n="impact.learn.title">Currently learning</h3>
+        <p data-i18n="impact.learn.desc">React fundamentals, API integration patterns, and testing basics to contribute faster in product teams.</p>
+      </article>
+    </div>
+  </section>
 
 
 <!-- ══ INTERACTIVE TERMINAL ═══════════════════════════ -->
  
- 
-<!-- ══ TERMINAL ══════════════════════════════════════════════
-     Pega esto al final de <main>, justo antes de </main>
-     Requiere: terminal.css y terminal.js
-     ═══════════════════════════════════════════════════════ -->
+
  
 <section id="terminal-section">
  
@@ -524,6 +555,14 @@
 </section>
 
 <footer>
+  <section id="analytics-debug" aria-live="polite">
+    <h3 data-i18n="analytics.title">CTA Click Analytics (Local)</h3>
+    <ul id="analytics-list" class="analytics-list"></ul>
+    <div class="analytics-actions">
+      <button type="button" id="analytics-refresh" class="analytics-btn" data-i18n="analytics.refresh">Refresh</button>
+      <button type="button" id="analytics-reset" class="analytics-btn analytics-btn-danger" data-i18n="analytics.reset">Reset counters</button>
+    </div>
+  </section>
   <p data-i18n="footer.copy">© 2026 Jose Aparicio — Web Developer · Built by hand, line by line · Málaga, España</p>
 </footer>
 

@@ -295,5 +295,8 @@
   }
 
   boot();
-  input.focus();
+  document.addEventListener('click', (e) => {
+    const term = e.target.closest('#terminal-section');
+    if (term) input.focus();
+  });
 })();
