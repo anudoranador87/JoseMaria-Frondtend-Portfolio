@@ -389,3 +389,55 @@ window.addEventListener('scroll', () => {
     a.classList.toggle('here', a.getAttribute('href') === '#' + current);
   });
 }, { passive: true });
+
+
+
+/* ═══════════════════════════════════════════════════════════
+   GITHUB API — Carga dinámica de proyectos
+═══════════════════════════════════════════════════════════ */
+async function getGithubProjects() {
+  try {
+    const datos = await fetch("https://api.github.com/users/anudoranador87/repos");
+    const jsondatos = await datos.json();
+    const myRepos = [
+      "campus-crema-react",
+      "-MiniShop-JS",
+      "mangata-gallo-jewelry",
+      "Mi-Camino-Web-365",
+      "fcc-technical-documentation",
+      "we-playing-cards"
+    ];
+    const filtrados = jsondatos.filter(repo => myRepos.includes(repo.name));
+    const contenedor = document.querySelector('#github-repos');
+    filtrados.forEach(repo => {
+      contenedor.innerHTML += `
+        <div class="project-card">
+          <div class="project-browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="project-content">
+            <h3>${repo.name}</h3>
+            <p>${repo.description || 'No description available.'}</p>
+            <p class="project-date">🕒 ${new Date(repo.pushed_at).toLocaleDateString('es-ES')}</p>
+            <div class="project-tags">
+              <span class="ptag">${repo.language || 'HTML/CSS'}</span>
+              <span class="ptag">⚡ Live from GitHub</span>
+            </div>
+            <div class="project-actions">
+              <a href="${repo.html_url}" class="btn-code" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  } catch (error) {
+    console.error('Error cargando repos de GitHub:', error);
+  }
+}
+ 
+document.addEventListener('DOMContentLoaded', getGithubProjects);
+ 
