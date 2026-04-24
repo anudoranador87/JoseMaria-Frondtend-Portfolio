@@ -405,7 +405,8 @@ async function getGithubProjects() {
       "mangata-gallo-jewelry",
       "Mi-Camino-Web-365",
       "fcc-technical-documentation",
-      "we-playing-cards"
+      "we-playing-cards",
+       "DeskPedia"
     ];
     const filtrados = jsondatos.filter(repo => myRepos.includes(repo.name));
     const contenedor = document.querySelector('#github-repos');
