@@ -407,7 +407,8 @@ async function getGithubProjects() {
       "fcc-technical-documentation",
       "we-playing-cards",
        "DeskPedia",
-       "Trivial-shift"
+       "Trivial-shift",
+       "lostdesk-hotel"
     ];
     const filtrados = jsondatos.filter(repo => myRepos.includes(repo.name));
     const contenedor = document.querySelector('#github-repos');
