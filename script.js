@@ -401,11 +401,12 @@ async function getGithubProjects() {
     const jsondatos = await datos.json();
     const myRepos = [
       "campus-crema-react",
-      "-MiniShop-JS",
-      "mangata-gallo-jewelry",
-      "Mi-Camino-Web-365",
-      "fcc-technical-documentation",
-      "we-playing-cards"
+      "mangata-gallo-jewelry",     
+      "we-playing-cards",
+      "lostdesk-hotel",
+      "Trivial-shift",
+      "DeskPedia"
+ 
     ];
     const filtrados = jsondatos.filter(repo => myRepos.includes(repo.name));
     const contenedor = document.querySelector('#github-repos');
@@ -429,6 +430,9 @@ async function getGithubProjects() {
               <a href="${repo.html_url}" class="btn-code" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i> Code
               </a>
+              ${repo.homepage ? `<a href="${repo.homepage}" class="btn-live" target="_blank" rel="noopener noreferrer">
+  <i class="fa fa-eye"></i> Demo
+</a>` : ''}
             </div>
           </div>
         </div>
